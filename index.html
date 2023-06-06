@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Caesar Cipher Encryption and Decryption</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Ceasar Cipher Encryption and Decryption</h1>
+    <div class="container">
+        <h2>Caesar Cipher</h2>
+        <label for="phrase">Enter Your Personal Phrase:</label>
+        <input type="text" id="phrase" placeholder="Enter phrase">
+        <label for="shift">Shift Value:</label>
+        <input type="number" id="shift" placeholder="Enter shift value">
+        <button onclick="encrypt()">Encrypt</button>
+        <br>
+        <label for="encrypted">Encrypted Phrase:</label>
+        <input type="text" id="encrypted" readonly>
+        <br><br>
+        <label for="encrypted">Enter Encrypted Phrase:</label>
+        <input type="text" id="encryptedInput" placeholder="Enter encrypted phrase">
+        <button onclick="decrypt()">Decrypt</button>
+        <br>
+        <label for="decrypted">Decrypted Phrase:</label>
+        <input type="text" id="decrypted" readonly>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
