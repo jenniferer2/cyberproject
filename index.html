@@ -5,13 +5,13 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Caesar Cipher Encryption and Decryption</h1>
+    <h1>Cryptography Ciphers</h1>
     <div class="container">
         <h2>Caesar Cipher</h2>
         <label for="phrase">Enter Your Personal Phrase:</label>
         <input type="text" id="phrase" placeholder="Enter phrase">
         <label for="shift">Shift Value:</label>
-        <input type="number" id="shift" placeholder="Enter shift value">
+        <input type="number" id="shift" placeholder="Enter shift value" min="0">
         <button onclick="encrypt()">Encrypt</button>
         <br>
         <label for="encrypted">Encrypted Phrase:</label>
@@ -25,6 +25,35 @@
         <input type="text" id="decrypted" readonly>
     </div>
 
+    <h2>2D Array Shifting Cipher</h2>
+
+    <label for="phrase1">Enter Your Personal Phrase:</label>
+    <input type="text" id="phrase1" placeholder="Enter phrase">
+    <label for="rows1">Number of Rows:</label>
+    <input type="number" id="rows1" min="0">
+    <label for="columns1">Number of Columns:</label>
+    <input type="number" id="columns1" min="0">
+    <button onclick="encryptArray()">Encrypt</button>
+    <br>
+    <label for="encrypted1">Encrypted Phrase:</label>
+    <input type="text" id="encrypted1" readonly>
+    <br>
+
+    <label for="message">Enter Encrypted Phrase:</label>
+    <input type="text" id="message" placeholder="Enter phrase">
+    <label for="rows2">Number of Rows:</label>
+    <input type="number" id="rows2" min="0">
+    <label for="columns2">Number of Columns:</label>
+    <input type="number" id="columns2" min="0">
+
+    <button onclick="decryptArray()">Decrypt</button>
+    <br>
+
+    <label for="decrypted1">Decrypted Phrase:</label>
+    <input type="text" id="decrypted1" readonly>
+    <br>
+  
+    <script src="shifting.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

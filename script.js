@@ -41,3 +41,31 @@ function decrypt() {
 
     decryptedInput.value = decryptedPhrase;
 }
+function encryptArray() {
+    const rows = parseInt(document.getElementById("rows1").value);
+    const columns = parseInt(document.getElementById("columns1").value);
+    const message = document.getElementById("phrase1").value;
+  
+    const shifting = new Shifting(rows, columns);
+    const encryptedMessage = shifting.encryptMessage(message);
+  
+    document.getElementById("encrypted1").value = encryptedMessage;
+}
+  
+function decryptArray() {
+    const rows = parseInt(document.getElementById("rows2").value);
+    const columns = parseInt(document.getElementById("columns2").value);
+    const encryptedMessage = document.getElementById("message").value;
+  
+    const shifting = new Shifting(rows, columns);
+    const decryptedMessage = shifting.decryptMessage(encryptedMessage);
+  
+    document.getElementById("decrypted1").value = decryptedMessage;
+}
+
+
+
+
+
+
+  
